@@ -433,7 +433,7 @@ gitalk:
   enable: true
   clientID: 994e3741d03c4eea6c84
   clientSecret: 95a7b1f02201413e2c6f51f1159298624efcc370
-  repo: walstruzz.github.io
+  repo: walstruzz
   owner: Walstruzz
   admin: Walstruzz
 
