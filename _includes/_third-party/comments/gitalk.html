@@ -17,7 +17,7 @@
         admin: ['{{ site.gitalk.owner }}'],
         id: decodeURI('{{ page.url }}'),
         labels: ['gitalk'],
-        perPage: 50,
+        perPage: 100,
         distractionFreeMode: true
       });
       gitalk.render('gitalk-container');
