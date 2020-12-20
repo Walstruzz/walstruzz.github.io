@@ -17,8 +17,9 @@ categories:
 
 $$
 \begin{aligned}
-L &=\frac{1}{N}\sum_{i}{L_{i}}\\
-  &=\frac{1}{N}\sum_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\sum_{j}{e^{f_{j}}}})}} 
+L &= \frac{1}{N}\sum_{i}{L_{i}}\\
+  &= \frac{1}{N}\sum_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\sum_{j}{e^{f_{j}}}})}} 
+  &= \parallel W \parallel
 \end{aligned}
 \tag{1}
 $$
@@ -27,10 +28,10 @@ $$
 
 $$
 \begin{aligned}
-L&=\frac{1}{N}\sum_{i}{L_{i}} \\
- &=\frac{1}{N}\sum_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\sum_{j}{e^{f_{j}}}})}} \\
- &=\frac{1}{N}\sum_{i}{-\log{(\frac{e^{W_{y_{i}}x_{i}}}{\sum_{j}{e^{W_{j}x{i}}}})}} \\
- &= \frac{1}{N}\sum_{i}{-\log{(\frac{e^{\parallel W_{y_{i}} \parallel \parallel x_{i} \parallel \cos(\theta_{y{i}})}}{\sum_{j}{e^{\parallel W_{j} \parallel \parallel x_{i} \parallel \cos(\theta_{j})}}})}}
+L &= \frac{1}{N}\sum_{i}{L_{i}}\\
+  &= \frac{1}{N}\sum_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\sum_{j}{e^{f_{j}}}})}}\\
+  &= \frac{1}{N}\sum_{i}{-\log{(\frac{e^{W_{y_{i}}x_{i}}}{\sum_{j}{e^{W_{j}x{i}}}})}}\\
+  &= \frac{1}{N}\sum_{i}{-\log{(\frac{e^{\parallel W_{y_{i}} \parallel \parallel x_{i} \parallel \cos(\theta_{y{i}})}}{\sum_{j}{e^{\parallel W_{j} \parallel \parallel x_{i} \parallel \cos(\theta_{j})}}})}}
 \end{aligned}
 \tag{2}
 $$
