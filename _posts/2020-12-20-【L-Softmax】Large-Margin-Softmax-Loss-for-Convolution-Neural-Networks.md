@@ -24,7 +24,9 @@ L &= \frac{1}{N}\sum_{i}{L_{i}}\\
 \tag{1}
 $$
 
+
 一般Softmax Loss前一层为权重为$$W$$的全连接层，忽略偏置，则上述公式(1)可以写作
+
 
 $$
 \begin{aligned}
@@ -35,11 +37,17 @@ L &= \frac{1}{N}\sum_{i}{L_{i}}\\
 \end{aligned}
 \tag{2}
 $$
+
+
 我们知道$f_{y_{i}}$即logit，我们最终希望对于样本对$\{x_{i}, y_{i}\}$，模型输出的logit中$y_{i}$对应的项大于其它项，即
+
+
 $$
 \begin{aligned}
 f_{y_{i}} &\gt f_{y_{j}} \\
 \parallel W_{y_{i}} \parallel \parallel x_{i} \parallel \cos(\theta_{y{i}}) &\gt  \parallel W_{y_{j}} \parallel \parallel x_{i} \parallel \cos(\theta_{y{j}}) \\
 \end{aligned}
 $$
+
+
 讨论区间$[0, \pi]$，由于$\cos$函数在这个区间内单调递减，所以精髓
