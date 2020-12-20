@@ -15,10 +15,9 @@ categories:
 作者发现当前的CNN学习目标倾向于最大化类内紧凑(intra-class compactness)和类间稀疏性(inter-class separability)，比如Triplet Loss，而Triplet Loss计算复杂度较高，不利于大数据训练，而如此简单好用又如此合适的Softmax Loss却少有这方面的研究。Softmax Loss的格式为2
 
 
-
-{% raw %}
-$$ L=\frac{1}{N}\Sigma_{i}{L_{i}}=\frac{1}{N}\Sigma_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\Sigma_{j}{e^{f_{j}}}})}} $$
-{% endraw %}
+$$
+L=\frac{1}{N}\Sigma_{i}{L_{i}}=\frac{1}{N}\Sigma_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\Sigma_{j}{e^{f_{j}}}})}}
+$$
 
 
 
