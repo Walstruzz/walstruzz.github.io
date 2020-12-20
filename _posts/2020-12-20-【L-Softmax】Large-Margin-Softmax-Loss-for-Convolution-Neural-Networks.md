@@ -19,7 +19,7 @@ $$
 L=\frac{1}{N}\sum_{i}{L_{i}}=\frac{1}{N}\sum_{i}{-\log{(\frac{e^{f_{y_{i}}}}{\sum_{j}{e^{f_{j}}}})}} \tag{1}
 $$
 
-一般Softmax Loss前一层为权重为$W$的全连接层，忽略偏置，则上述公式(1)可以写作
+一般Softmax Loss前一层为权重为$$W$$的全连接层，忽略偏置，则上述公式(1)可以写作
 
 $$
 \begin{aligned}
@@ -37,4 +37,4 @@ f_{y_{i}} &\gt f_{y_{j}} \\
 \parallel W_{y_{i}} \parallel \parallel x_{i} \parallel \cos(\theta_{y{i}}) &\gt  \parallel W_{y_{j}} \parallel \parallel x_{i} \parallel \cos(\theta_{y{j}}) \\
 \end{aligned}
 $$
-讨论区间$[0, \pi]$，由于$\cos$函数在这个区间内单调递减，所以
+讨论区间$[0, \pi]$，由于$\cos$函数在这个区间内单调递减，所以精髓
